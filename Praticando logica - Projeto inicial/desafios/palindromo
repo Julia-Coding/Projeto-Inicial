@@ -1,0 +1,30 @@
+//function declaration = aceita icamento//
+
+essaPalavraEUmPalindromo();
+
+function essaPalavraEUmPalindromo() {
+    var palavra = "rever";
+    var separandoAsLetrasDaPalavra = palavra.split("");
+    var palavraInvertida = separandoAsLetrasDaPalavra.reverse();
+    palavraInvertida = palavraInvertida.join("");
+    if (palavra == palavraInvertida) {
+        console.log("A palavra " + palavra + " eh um palindromo");
+    } else {
+        console.log("A palavra " + palavra + " nao eh um palindromo");
+    }
+}
+
+//function expression = nao aceita icamento//
+
+const essaPalavraEUmPalindromo = function(palavra) {
+    var separandoAsLetrasDaPalavra = palavra.split("");
+    var palavraInvertida = separandoAsLetrasDaPalavra.reverse();
+    palavraInvertida = palavraInvertida.join("");
+    if (palavra == palavraInvertida) {
+        console.log("A palavra " + palavra + " eh um palindromo");
+    } else {
+        console.log("A palavra " + palavra + " nao eh um palindromo");
+    }
+} 
+
+essaPalavraEUmPalindromo("radar");
