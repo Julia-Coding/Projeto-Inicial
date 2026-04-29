@@ -16,8 +16,7 @@ function essaPalavraEUmPalindromo() {
 
 //function expression = nao aceita icamento//
 
-const essaPalavraEUmPalindromo = function() {
-    var palavra = "rever";
+const essaPalavraEUmPalindromo = function(palavra) {
     var separandoAsLetrasDaPalavra = palavra.split("");
     var palavraInvertida = separandoAsLetrasDaPalavra.reverse();
     palavraInvertida = palavraInvertida.join("");
@@ -28,4 +27,4 @@ const essaPalavraEUmPalindromo = function() {
     }
 } 
 
-essaPalavraEUmPalindromo();
+essaPalavraEUmPalindromo("radar");
